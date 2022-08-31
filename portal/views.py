@@ -1,4 +1,8 @@
-from django_nextjs.render import render_nextjs_page_sync
+from django.shortcuts import render
+
 
 def index(request):
-    return render_nextjs_page_sync(request)
+    return render(request, 'portal/base.html')
+
+def login(request):
+    return render(request, 'portal/login.html')
