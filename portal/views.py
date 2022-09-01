@@ -6,3 +6,6 @@ def index(request):
 
 def login(request):
     return render(request, 'portal/login.html')
+
+def dashboard(request):
+    return render(request, 'portal/dashboard.html')
